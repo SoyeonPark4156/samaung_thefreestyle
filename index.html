@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./css/responsive.css">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="./index.js"></script>
+    <script defer src="./js/index.js"></script>
 
-    <!-- slick slide
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- slick slide -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 <body>
@@ -41,8 +41,8 @@
                     <ul>
                         <li><a href="#"><i class="icon icon-zoom"></i></a></li>
                         <li><a href="#"><i class="icon icon-cart"></i></a></li>
-                        <li class="mo_delete"><a href="#"><i class="icon icon-people"></i></a></li>
-                        <li class="mo_show"><a href="#"><i class="icon icon-nav"></i></a></li>
+                        <li class="nav_delete"><a href="#"><i class="icon icon-people"></i></a></li>
+                        <li class="nav_show"><a href="#"><i class="icon icon-nav"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -124,12 +124,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <!-- 슬라이드 -->
-                        <div class="slide_wrap">
-
-
+                        <div id="slide_wrap" class="fade">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
                         </div>
                         <!-- 슬라이드끝 -->
+                    <div class="inner_1440">
                         <div class="how_apply_wrap">
                             <h2 class="small_tit">플레이어 응모 방법</h2>
                             <div class="how_apply_box">
@@ -178,11 +184,13 @@
                                     * 이해를 돕기 위해 연출된 이미지로 실사용시 차이가 있을 수 있음
                                 </p>
                                 <div class="hashtag_wrap">
-                                    <div class="hashtag_txt">
-                                        #삼성TheFreestyle #더프리스타일 #TheFreestyle<br class="mo_show"> #올라운드플레이어 #삼성더프리스타일플레이어<br>
-                                        #더프리스타일체험이벤트 #삼성전자이벤트<br class="mo_show"> #삼성라이프스타일TV #삼성TV
+                                    <input type="hidden" id="copy_tag" value="#삼성TheFreestyle #더프리스타일 #TheFreestyle #올라운드플레이어 #삼성더프리스타일플레이어
+                                    #더프리스타일체험이벤트 #삼성전자이벤트 #삼성라이프스타일TV #삼성TV">
+                                    <div class="hashtag_txt" id="tag_text">
+                                        #삼성TheFreestyle #더프리스타일 #TheFreestyle #올라운드플레이어 #삼성더프리스타일플레이어
+                                        <br>#더프리스타일체험이벤트 #삼성전자이벤트 #삼성라이프스타일TV #삼성TV
                                     </div>
-                                    <div class="hashtag_copy_btn">해시태그 복사하기</div>
+                                    <div class="hashtag_copy_btn" id="tag_copy_btn">해시태그 복사하기</div>
                                 </div>
                                 <div class="sns_icons">
                                     <div class="sns_icon" id="fb_icon"></div>
@@ -239,8 +247,8 @@
                         </div>
                         <div class="playlist_img"></div>
                         <p class="playlist_des">
-                            선발된 50명의 더 프리스타일 플레이어가 매주 취향저격 플레이리스트를 공개합니다.<br>
-                            지금 바로 원하는 카테고리를 선택해 더 프리스타일 플레이리스트를 구독해보세요.<br>
+                            선발된 50명의 더 프리스타일 플레이어가 매주 취향저격<br class="mo_show"> 플레이리스트를 공개합니다.<br>
+                            지금 바로 원하는 카테고리를 선택해<br class="mo_show"> 더 프리스타일 플레이리스트를 구독해보세요.<br>
                             푸짐한 선물과 함께 나의 취향에 딱 맞는 콘텐츠를 제공해드립니다.
                         </p>
                         <div class="cate_wrap">
@@ -270,7 +278,7 @@
                                 <div class="benefit_item">
                                     <div class="benefit_det">
                                         <div class="benefit_img" id="playlist_bnf_img1"></div>
-                                        <div class="benefit_txt">더 프리스타일 플레이어<br>맞춤 큐레이션 콘텐츠<br>MMS 발송</div>
+                                        <div class="benefit_txt">더 프리스타일 <span class="mo_delete">플레이어</span><br>맞춤 큐레이션 콘텐츠<br>MMS 발송</div>
                                     </div>
                                 </div>
                             </div>

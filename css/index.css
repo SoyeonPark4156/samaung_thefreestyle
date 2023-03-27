@@ -25,7 +25,7 @@ a {text-decoration:none; color:inherit;cursor: pointer;}
 #header .header-right .icon-cart{background: url(../img/icon-cart.svg) no-repeat center / contain;}
 #header .header-right .icon-people{background: url(../img/icon-people.svg) no-repeat center / contain;}
 #header .header-right .icon-nav{background: url(../img/icon-nav.svg) no-repeat center / contain;}
-
+.nav_show{display: none;}
 
 #container{position: relative; width: 100%;}
 .inner_1920{max-width: 1920px; width: 100%; position: relative; margin: 0 auto; }
@@ -45,8 +45,8 @@ a {text-decoration:none; color:inherit;cursor: pointer;}
 .sec_pod .pod_ment{font-size: 45px; line-height: 63px; width: 100%; text-align: center; padding-top: 130px;}
 .sec_pod .pod_info_wrap{display: flex;position: relative;width: 100%;}
 /* .sec_pod .pod_info_wrap .pod_img_box{width: 50%;position: relative;} */
-.sec_pod .pod_info_wrap .pod_img{width: 492px; height:583px; background: url(../img/pd_img.png) no-repeat center / contain; position: absolute; top: 55px;left: 110px;}
-.sec_pod .pod_info_wrap .pod_des_box{width: 50%;}
+.sec_pod .pod_info_wrap .pod_img{width: 492px; height:583px; background: url(../img/pd_img.png) no-repeat center / contain; position: relative; top: 55px;left: 110px;}
+.sec_pod .pod_info_wrap .pod_des_box{width: 50%;position: relative;left: 15%;}
 .sec_pod .pod_des_wrap{padding: 140px 0 0 90px;}
 .sec_pod .pod_des_wrap{padding: 140px 0 0 90px;}
 .sec_pod .pod_des_wrap h3{font-size: 39px;margin-bottom: 20px;font-family: 'SamsungSharpSans';}
@@ -72,7 +72,6 @@ a {text-decoration:none; color:inherit;cursor: pointer;}
 .info_tit{width: 126px;height: 48px;background-color:#e2e2e2;color: #000;font-size: 22px;border-radius: 30px;text-align: center;font-weight: 700;}
 .info_txt{color: #000;font-size: 24px;}
 
-.sec_player .slide_wrap{width: 100%;height: 500px;background-color: #70a58c;}
 
 .small_tit{font-size: 52px;padding: 60px 0;text-align: center;letter-spacing: -1.5px;}
 .sec_player .how_apply_box{width: 100%; height: 100%; background-color: #f7f7f7;border-radius: 35px;margin-bottom: 35px;}
@@ -104,8 +103,8 @@ a {text-decoration:none; color:inherit;cursor: pointer;}
 .sec_player .note_txt{font-size: 20px; line-height: 30px; text-align: center; color: #666666;padding-top:27px;}
 .sec_player .hashtag_wrap{display: flex;height: 113px;justify-content: center;padding: 38px 0 38px 0;}
 .sec_player .hashtag_txt{width: 980px;height: 100%; padding: 20px 0;box-sizing: border-box; background-color: #fff; color: #000;font-size: 24px;line-height: 38px;text-align: center;border-radius: 15px 0 0 15px;}
-.sec_player .hashtag_copy_btn{width: 220px;height: 100%;font-size: 22px;font-weight: 500;color: #fff;background-color: #446377; border-radius: 0 15px 15px 0;line-height: 113px;}
-.sec_player .sns_icons{display: flex; justify-content: center; gap: 20px;}
+.sec_player .hashtag_copy_btn{width: 220px;height: 100%;font-size: 22px;font-weight: 500;color: #fff;background-color: #446377; border-radius: 0 15px 15px 0;line-height: 113px;cursor: pointer;}
+.sec_player .sns_icons{display: flex; justify-content: center; gap: 20px;padding-bottom: 80px;}
 .sec_player .sns_icons .sns_icon{width: 52px; height: 52px;}
 .sns_icon#fb_icon{background: url(../img/fb_icon.png) no-repeat center / contain;}
 .sns_icon#insta_icon{background: url(../img/insta_icon.png) no-repeat center / contain;}
@@ -140,7 +139,7 @@ p.apply_note{font-size: 18px;color: #858585;padding: 10px 0;font-weight: 400;}
 .sec_playlist .info_tit{width: 168px;height: 48px;}
 .sec_playlist .info_txt{font-weight: 700;white-space: nowrap;}
 
-.benefit_img#playlist_bnf_img1{height: 150px; background: url(../img/playlist_benefit_img1.png) no-repeat center / contain;}
+.benefit_img#playlist_bnf_img1{height: 150px; background: url(../img/playlist_benefit_img1.png) no-repeat center / contain; position: relative;left: -7%;}
 .benefit_img#playlist_bnf_img2{height: 150px; background: url(../img/playlist_benefit_img2.png) no-repeat center / contain;}
 .benefit_img#playlist_bnf_img3{height: 166px; background: url(../img/playlist_benefit_img3.png) no-repeat center / contain;}
 .benefit_img#playlist_bnf_img4{height: 166px; background: url(../img/playlist_benefit_img4.png) no-repeat center / contain;}
@@ -150,5 +149,23 @@ p.apply_note{font-size: 18px;color: #858585;padding: 10px 0;font-weight: 400;}
 .sec_playlist .benefit_box:nth-child(2){width: calc((100% - 24px)/4);}
 
 /* footer */
-#footer{width: 100%;height: 1090px; background: url(../img/footer.png) no-repeat center /cover;margin-top: 140px;}
+#footer{width: 100%;height: 941px; background: url(../img/footer.png) no-repeat center /cover;margin-top: 140px;}
 
+/* 슬라이드 */
+#slide_wrap{width: 1440px;height: 675px;padding: 0 120px; box-sizing: border-box;margin: 0 auto 200px;}
+.item{ height: 675px!important;border-radius: 30px;}
+#slick-slide00{background: url(../img/slide1.png) no-repeat center / cover;}
+#slick-slide01{background: url(../img/slide2.png) no-repeat center / cover;}
+#slick-slide02{background: url(../img/slide3.png) no-repeat center / cover;}
+#slick-slide03{background: url(../img/slide4.png) no-repeat center / cover;}
+#slick-slide04{background: url(../img/slide5.png) no-repeat center / cover;}
+#slick-slide05{background: url(../img/slide6.png) no-repeat center / cover;}
+
+.slick-prev{width: 25px;height: 44px;background: url(../img/prev_arrow_off.png) no-repeat center / contain;position: absolute;left: 0;top: calc(50% - 22px);cursor: pointer;}
+.slick-next{width: 25px;height: 44px;background: url(../img/next_arrow_on.png) no-repeat center / contain;position: absolute;right: 0;top: calc(50% - 22px);cursor: pointer;}
+
+.slick-dots{display: flex;gap: 5px;position: absolute;left: 50%;transform: translateX(-50%);margin: 30px;}
+.slick-dots li button{width: 98px;height: 3px;background-color: #b1b1b1;cursor: pointer;position: relative;overflow: hidden;}
+.pause_btn{width: 15px;height: 20px;background: url(../img/pause.png) no-repeat center / contain; margin: 5px;}
+.play_btn{width: 15px;height: 20px;background: url(../img/play_btn.png) no-repeat center / contain; margin: 5px;}
+.progress_bar{width: 100%;height: 3px;background-color: #000;position: absolute;left: -100%;top: 0;}
