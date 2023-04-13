@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- <link rel="stylesheet" href="./css/responsive.css"> -->
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="./js/index.js"></script>
@@ -25,8 +25,8 @@
                 <a href="#" class="logo">
                     <img src="./img/logo_samsung_black.svg" alt="삼성">
                 </a>
-                <nav class="gnb mo_hide">
-                    <ul class="mo_delete">
+                <nav class="gnb nav_hide">
+                    <ul class="mo_hide">
                         <li><a href="#">제품</a></li>
                         <li><a href="#">기획전</a></li>
                         <li><a href="#">스토리</a></li>
@@ -47,51 +47,51 @@
                 </div>
             </div>
         </header>
-        <div id="container">
-            <div class="inner_1920">
+        <main id="main">
+            <div id="container">
+                <!-- KeyVisual section -->
                 <section class="sec_kv">
                     <div class="inner_1440">
                         <div class="title_wrap">
-                            <p>맘껏 놀아볼 <span class="txt_point">플레이어들 모여라!</span></p>
+                            <p>맘껏 놀아볼 <strong>플레이어들 모여라!</strong></p>
                             <h2 class="title_kor">더 프리스타일</h2>
                             <h2 class="title_eng">Player</h2>
                         </div>
                     </div>
                 </section>
-                <div class="mo_sec_bg"></div>
+                <!-- product section -->
                 <section class="sec_pod">
-                    <div class="sec_pod_bg mo_delete"></div>
                     <div class="inner_1440">
-                        <div class="pod_ment">
-                            <p>
-                                <span class="txt_point">언제.어디서나.쉽게.크게.</span><br>
-                                원하는 대로 놀고 원하는 대로 골라본다!
-                            </p>
-                        </div>
+                        <p class="pod_ment">
+                            <strong>언제.어디서나.쉽게.크게.</strong><br>
+                            원하는 대로 놀고 원하는 대로 골라본다!
+                        </p>
                         <div class="pod_info_wrap">
-                            <!-- <div class="pod_img_box"> -->
-                                <div class="pod_img"></div>
-                            <!-- </div> -->
+                            <div class="pod_img_box">
+                                <img src="./img/pd_img.png" alt="더 프리스타일 제품 이미지" class="pod_img mo_hide">
+                                <img src="./img/mo_pd_img.png" alt="더 프리스타일 제품 이미지" class="pod_img mo_show">
+                            </div>
                             <div class="pod_des_box">
                                 <div class="pod_des_wrap">
                                     <h3>All Round Player</h3>
                                     <h2>The Freestyle</h2>
                                     <p>더 프리스타일의 플레이어에 응모하고<br>
                                         취향에 딱 맞는 나만의 플레이리스트를 구독해보세요.<br>
-                                        <span class="txt_point">신제품 체험의 기회와 푸짐한 경품혜택을 드립니다!</span>
+                                        <strong>신제품 체험의 기회와 푸짐한 경품혜택을 드립니다!</strong>
                                     </p>
-                                    <a class="go_pod_page">제품 자세히 보기</a>
+                                    <a class="go_pod_page" title="제품 자세히 보기">제품 자세히 보기</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="pod_btn_wrap mo_delete">
-                            <a class="pod_btn01">01 플레이어</a>
-                            <a class="pod_btn02">02 플레이리스트</a>
+                        <div class="pod_btn_wrap mo_hide">
+                            <a href="#player_section" class="pod_btn01">01 플레이어</a>
+                            <a href="#playlist_section" class="pod_btn02">02 플레이리스트</a>
                         </div>
                     </div>
                 </section>
-                <section class="sec_player">
-                    <div class="sec_player_bg mo_delete"></div>
+
+                <!-- player section -->
+                <section class="sec_player" id="player_section">
                     <div class="inner_1440">
                         <div class="sec_title_wrap">
                             <h2 class="big_tit_blue">The Freestyle</h2>
@@ -99,78 +99,100 @@
                         </div>
                         <div class="player_iframe"></div>
                         <p class="player_des">크리에이티브 한 아이디어로 더 프리스타일을 즐기는<br class="mo_show"> 더 프리스타일 플레이어가 되어보세요.<br>
-                                                나만의 체험 아이디어를 응모해주신 베스트 아이디어<br class="mo_show">50분을 선정하여<br class="mo_delete">
+                                                나만의 체험 아이디어를 응모해주신 베스트 아이디어<br class="mo_show">50분을 선정하여<br class="mo_hide">
                                                 더 프리스타일 체험 기회와 직접 만든 콘텐츠가<br class="mo_show"> 매 주 플레이리스트로 공개되는 혜택을 드립니다.
                         </p>
-                        <div class="info_wrap">
-                            <div class="info_row">
-                                <div class="info_box">
-                                    <div class="info_tit">모집인원</div>
-                                    <div class="info_txt">총 50명</div>
-                                </div>
-                                <div class="info_box">
-                                    <div class="info_tit">모집기간</div>
-                                    <div class="info_txt">2022.01.27 ~ 2022.02.06</div>
-                                </div>
-                            </div>
-                            <div class="info_row">
-                                <div class="info_box">
-                                    <div class="info_tit">당첨발표</div>
-                                    <div class="info_txt">2022.02.14 ~ 2022.02.15</div>
-                                </div>
-                                <div class="info_box">
-                                    <div class="info_tit">활동기간</div>
-                                    <div class="info_txt">2022.02.18 ~ 3월 중순까지</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <dl class="info_wrap">
+                            <dt class="info_tit">모집인원</dt>
+                            <dd class="info_txt">총 50명</dd>
+
+                            <dt class="info_tit">모집기간</dt>
+                            <dd class="info_txt">2022.01.27 ~ 2022.02.06</dd>
+
+                            <dt class="info_tit">당첨발표</dt>
+                            <dd class="info_txt">2022.02.14 ~ 2022.02.15</dd>
+
+                            <dt class="info_tit">활동기간</dt>
+                            <dd class="info_txt">2022.02.18 ~ 3월 중순까지</dd>
+                        </dl>
+
                         <!-- 슬라이드 -->
-                        <div id="slide_wrap" class="fade">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+                        <div id="slide_wrap">
+                            <div class="slider">
+                                <div class="s_item">
+                                    <img src="./img/slide1.png" alt="#캠핑#여행#이동식멀티태스크" class="mo_hide">
+                                    <img src="./img/mo_slide1.png" alt="#캠핑#여행#이동식멀티태스크" class="mo_show">
+                                </div>
+                                <div class="s_item">
+                                    <img src="./img/slide2.png" alt="#펫#인테리어#우리집아트디렉터" class="mo_hide">
+                                    <img src="./img/mo_slide2.png" alt="#펫#인테리어#우리집아트디렉터" class="mo_show">
+                                </div>
+                                <div class="s_item">
+                                    <img src="./img/slide3.png" alt="#댄스#뮤직#아트#프리한스타일리스트" class="mo_hide">
+                                    <img src="./img/mo_slide3.png" alt="#댄스#뮤직#아트#프리한스타일리스트" class="mo_show">
+                                </div>
+                                <div class="s_item">
+                                    <img src="./img/slide4.png" alt="#IT#영상#사진#벽만있으면전시회" class="mo_hide">
+                                    <img src="./img/mo_slide4.png" alt="#IT#영상#사진#벽만있으면전시회" class="mo_show">
+                                </div>
+                                <div class="s_item">
+                                    <img src="./img/slide5.png" alt="#뷰티#패션#메이크오버치트키" class="mo_hide">
+                                    <img src="./img/mo_slide5.png" alt="#뷰티#패션#메이크오버치트키" class="mo_show">
+                                </div>
+                                <div class="s_item">
+                                    <img src="./img/slide6.png" alt="#운동#피트니스#오늘의운동메이트" class="mo_hide">
+                                    <img src="./img/mo_slide6.png" alt="#운동#피트니스#오늘의운동메이트" class="mo_show">
+                                </div>
+                            </div>
+                            <!-- 진행 표시줄 -->
+                            <ul class="progress">
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="bar"><span class="full_bar"></span></li>
+                                <li class="pause_btn"></li>
+                                <li class="play_btn none"></li>
+                            </ul>
                         </div>
                         <!-- 슬라이드끝 -->
-                    <div class="inner_1440">
+
                         <div class="how_apply_wrap">
                             <h2 class="small_tit">플레이어 응모 방법</h2>
                             <div class="how_apply_box">
                                 <div class="step_wrap">
                                     <div class="step_img_line">
-                                        <div class="step_img" id="step_img1"></div>
+                                        <div class="step_img step_img1"></div>
                                         <div class="step_des_box">
-                                            <h4 class="step_tit">STEP 1</h4>
+                                            <p class="step_tit">STEP 1</p>
                                             <p class="step_txt">개인 SNS에 아래 이미지 중<br>마음에 드는 이미지와 기대평 공유하기<br>*아래 해시태그 필수 기재<br>*공유게시물 전체 공개 필수</p>
                                         </div>
                                     </div>
                                     <div class="arrow_img"></div>
                                     <div class="step_img_line">
-                                        <div class="step_img" id="step_img2"></div>
+                                        <div class="step_img step_img2"></div>
                                         <div class="step_des_box">
-                                            <h4 class="step_tit">STEP 2</h4>
-                                            <p class="step_txt">아래 총 6개의 카테고리 중<br class="mo_delete">관심있는<br class="mo_show"> 분야 1개를 선택하여<br class="mo_delete">나만의<br class="mo_show"> 더 프리스타일<br class="mo_delete">체험 아이디어 구상하기</p>
+                                            <p class="step_tit">STEP 2</p>
+                                            <p class="step_txt">아래 총 6개의 카테고리 중<br class="mo_hide">관심있는<br class="mo_show"> 분야 1개를 선택하여<br class="mo_hide">나만의<br class="mo_show"> 더 프리스타일<br class="mo_hide">체험 아이디어 구상하기</p>
                                         </div>
                                     </div>
                                     <div class="arrow_img"></div>
-                                    <div class="step_img_line">
-                                        <div class="step_img" id="step_img3"></div>
+                                    <div class="step_img_line border_bot">
+                                        <div class="step_img step_img3"></div>
                                         <div class="step_des_box">
-                                            <h4 class="step_tit">STEP 3</h4>
+                                            <p class="step_tit">STEP 3</p>
                                             <p class="step_txt">[플레이어 응모하기] 버튼 클릭 후,<br>아이디어 내용과 제목 기입하기</p>
                                         </div>
                                     </div>
                                 </div>        
                                 <div class="cate_wrap">
-                                    <div class="cate_img" id="cate1"></div>
-                                    <div class="cate_img" id="cate2"></div>
-                                    <div class="cate_img" id="cate3"></div>
-                                    <div class="cate_img" id="cate4"></div>
-                                    <div class="cate_img" id="cate5"></div>
-                                    <div class="cate_img" id="cate6"></div>
+                                    <div class="cate_img cate1"><p>캠핑<br>여행</p></div>
+                                    <div class="cate_img cate2"><p>펫<br>인테리어</p></div>
+                                    <div class="cate_img cate3"><p>댄스<br>뮤직<br>아트</p></div>
+                                    <div class="cate_img cate4"><p>IT<br>영상<br>사진</p></div>
+                                    <div class="cate_img cate5"><p>운동<br>피트니스</p></div>
+                                    <div class="cate_img cate6"><p>뷰티<br>패션</p></div>
                                 </div>
                             </div>
                             <div class="how_apply_box">
@@ -184,19 +206,19 @@
                                     * 이해를 돕기 위해 연출된 이미지로 실사용시 차이가 있을 수 있음
                                 </p>
                                 <div class="hashtag_wrap">
-                                    <input type="hidden" id="copy_tag" value="#삼성TheFreestyle #더프리스타일 #TheFreestyle #올라운드플레이어 #삼성더프리스타일플레이어
-                                    #더프리스타일체험이벤트 #삼성전자이벤트 #삼성라이프스타일TV #삼성TV">
+                                    <!-- <input type="hidden" id="copy_tag" value="#삼성TheFreestyle #더프리스타일 #TheFreestyle #올라운드플레이어 #삼성더프리스타일플레이어
+                                    #더프리스타일체험이벤트 #삼성전자이벤트 #삼성라이프스타일TV #삼성TV"> -->
                                     <div class="hashtag_txt" id="tag_text">
-                                        #삼성TheFreestyle #더프리스타일 #TheFreestyle #올라운드플레이어 #삼성더프리스타일플레이어
-                                        <br>#더프리스타일체험이벤트 #삼성전자이벤트 #삼성라이프스타일TV #삼성TV
+                                        #삼성TheFreestyle #더프리스타일 #TheFreestyle<br class="mo_show">#올라운드플레이어 #삼성더프리스타일플레이어
+                                        <br>#더프리스타일체험이벤트 #삼성전자이벤트<br class="mo_show"> #삼성라이프스타일TV #삼성TV
                                     </div>
                                     <div class="hashtag_copy_btn" id="tag_copy_btn">해시태그 복사하기</div>
                                 </div>
                                 <div class="sns_icons">
-                                    <div class="sns_icon" id="fb_icon"></div>
-                                    <div class="sns_icon" id="insta_icon"></div>
-                                    <div class="sns_icon" id="cafe_icon"></div>
-                                    <div class="sns_icon" id="blog_icon"></div>
+                                    <div class="sns_icon fb_icon"><a href="https://ko-kr.facebook.com/" target="_blank" title="페이스북 바로가기"></a></div>
+                                    <div class="sns_icon insta_icon"><a href="https://www.instagram.com/" target="_blank" title="인스타그램 바로가기"></a></div>
+                                    <div class="sns_icon cafe_icon"><a href="https://section.cafe.naver.com/ca-fe/" target="_blank" title="네이버카페 바로가기"></a></div>
+                                    <div class="sns_icon blog_icon"><a href="https://section.blog.naver.com/BlogHome.naver" target="_blank" title="네이버블로그 바로가기"></a></div>
                                 </div>
                             </div>
                         </div>
@@ -204,14 +226,20 @@
                             <h2 class="small_tit">플레이어 활동 및 응모 혜택</h2>
                             <div class="benefit_wrap">
                                 <div class="benefit_box">
-                                    <div class="benefit_tit"><span class="txt_point">더 프리스타일 플레이어</span>(50인)</div>
+                                    <div class="benefit_tit"><strong>더 프리스타일 플레이어</strong>(50인)</div>
                                     <div class="benefit_item">
                                         <div class="benefit_det">
-                                            <div class="benefit_img" id="player_bnf_img1"></div>
-                                            <div class="benefit_txt">더 프리스타일<span class="mo_delete">플레이어<br>체험 미션 수행 완료 시</span><br class="mo_show">제품 제공</div>
+                                            <div class="benefit_img_box">
+                                                <img src="./img/player_benefit_img1.png" class="mo_hide" alt="더 프리스타일 플레이어 제z품 이미지">
+                                                <img src="./img/mo_player_benefit_img1.png" class="mo_show" alt="더 프리스타일 플레이어 제z품 이미지">
+                                            </div>
+                                            <div class="benefit_txt">더 프리스타일<span class="mo_hide">플레이어<br>체험 미션 수행 완료 시</span><br class="mo_show">제품 제공</div>
                                         </div>
                                         <div class="benefit_det">
-                                            <div class="benefit_img" id="player_bnf_img2"></div>
+                                            <div class="benefit_img_box">
+                                                <img src="./img/player_benefit_img2.png" class="mo_hide" alt="삼성닷컴이 화면에 보이는 노트북 이미지">
+                                                <img src="./img/mo_player_benefit_img2.png" class="mo_show" alt="삼성닷컴이 화면에 보이는 노트북 이미지">
+                                            </div>
                                             <div class="benefit_txt">삼성닷컴 내 나만의 프리스타일<br>플레이리스트 콘텐츠 공개</div>
                                         </div>
                                     </div>
@@ -220,14 +248,20 @@
                                     </div>
                                 </div>
                                 <div class="benefit_box">
-                                    <div class="benefit_tit"><span class="txt_point">응모자 랜덤 추첨</span>(50인)</div>
+                                    <div class="benefit_tit"><strong>응모자 랜덤 추첨</strong>(50인)</div>
                                     <div class="benefit_item">
                                         <div class="benefit_det">
-                                            <div class="benefit_img" id="player_bnf_img3"></div>
+                                            <div class="benefit_img_box">
+                                                <img src="./img/player_benefit_img3.png" class="mo_hide" alt="굽네치킨-랜선 우정 세트 이미지">
+                                                <img src="./img/mo_player_benefit_img3.png" class="mo_show" alt="굽네치킨-랜선 우정 세트 이미지">
+                                            </div>
                                             <div class="benefit_txt">굽네치킨-랜선 우정 세트<br>(볼케이노 + 바게트볼2개 + 콜라1.25L)<br>(30명)</div>
                                         </div>
                                         <div class="benefit_det">
-                                            <div class="benefit_img" id="player_bnf_img4"></div>
+                                            <div class="benefit_img_box">
+                                                <img src="./img/player_benefit_img4.png" class="mo_hide" alt="데이비드호크니전시 포스터 3종 이미지">
+                                                <img src="./img/mo_player_benefit_img4.png" class="mo_show" alt="데이비드호크니전시 포스터 3종 이미지">
+                                            </div>
                                             <div class="benefit_txt">데이비드호크니<br class="mo_show">전시 포스터 + 액자(3종)<br>(*포스터 및 액자<br class="mo_show"> 3종 중 1종 랜덤배송)<br>(20명)</div>
                                         </div>
                                     </div>                          
@@ -238,13 +272,14 @@
                         </div>
                     </div>
                 </section>
-                
-                <section class="sec_playlist">
+                <!-- playlist section -->
+                <section class="sec_playlist" id="playlist_section">
                     <div class="inner_1440">
                         <div class="sec_title_wrap">
                             <h2 class="big_tit_blue">The Freestyle</h2>
                             <h1 class="big_tit">Playlist</h1>
                         </div>
+                        <p class="playlist_date">더 프리스타일 플레이스트 공개 예정<br><strong>2022년 3월</strong></p>
                         <div class="playlist_img"></div>
                         <p class="playlist_des">
                             선발된 50명의 더 프리스타일 플레이어가 매주 취향저격<br class="mo_show"> 플레이리스트를 공개합니다.<br>
@@ -252,54 +287,61 @@
                             푸짐한 선물과 함께 나의 취향에 딱 맞는 콘텐츠를 제공해드립니다.
                         </p>
                         <div class="cate_wrap">
-                            <div class="cate_img" id="cate1"></div>
-                            <div class="cate_img" id="cate2"></div>
-                            <div class="cate_img" id="cate3"></div>
-                            <div class="cate_img" id="cate4"></div>
-                            <div class="cate_img" id="cate5"></div>
-                            <div class="cate_img" id="cate6"></div>
+                            <div class="cate_img cate1"><p>캠핑<br>여행</p></div>
+                            <div class="cate_img cate2"><p>펫<br>인테리어</p></div>
+                            <div class="cate_img cate3"><p>댄스<br>뮤직<br>아트</p></div>
+                            <div class="cate_img cate4"><p>IT<br>영상<br>사진</p></div>
+                            <div class="cate_img cate5"><p>운동<br>피트니스</p></div>
+                            <div class="cate_img cate6"><p>뷰티<br>패션</p></div>
                         </div>
                         <h2 class="small_tit">구독 신청 기간 및 혜택</h2>
-                        <div class="info_wrap">
-                            <div class="info_row">
-                                <div class="info_box">
-                                    <div class="info_tit">구독 신청 기간</div>
-                                    <div class="info_txt">2022.01.27~2022.03.11</div>
-                                </div>
-                                <div class="info_box">
-                                    <div class="info_tit">당첨자 발표</div>
-                                    <div class="info_txt">2022.03.24 (*당첨자 개별 발표)</div>
-                                </div>
-                            </div>
-                        </div>
+                        <dl class="info_wrap">
+                            <dt class="info_tit">구독 신청 기간</dt>
+                            <dl class="info_txt">2022.01.27~2022.03.11</dl>
+
+                            <dt class="info_tit">당첨자 발표</dt>
+                            <dl class="info_txt">2022.03.24 (*당첨자 개별 발표)</dl>
+                        </dl>
                         <div class="benefit_wrap">
-                            <div class="benefit_box">
-                                <div class="benefit_tit"><span class="txt_point">구독 신청자 전원</span></div>
+                            <div class="benefit_box single">
+                                <div class="benefit_tit"><strong>구독 신청자 전원</strong></div>
                                 <div class="benefit_item">
-                                    <div class="benefit_det">
-                                        <div class="benefit_img" id="playlist_bnf_img1"></div>
-                                        <div class="benefit_txt">더 프리스타일 <span class="mo_delete">플레이어</span><br>맞춤 큐레이션 콘텐츠<br>MMS 발송</div>
+                                    <div class="benefit_det no_border">
+                                        <div class="benefit_img_box">
+                                            <img src="./img/playlist_benefit_img1.png" class="mo_hide playlist_bnf_img1" alt="더 프리스타일 구독권 쿠폰 이미지">
+                                            <img src="./img/mo_playlist_benefit_img1.png" class="mo_show playlist_bnf_img1" alt="더 프리스타일 구독권 쿠폰 이미지">
+                                        </div>
+                                        <div class="benefit_txt">더 프리스타일 <span class="mo_hide">플레이어</span><br>맞춤 큐레이션 콘텐츠<br>MMS 발송</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="benefit_box">
-                                <div class="benefit_tit"><span class="txt_point">구독 신청자 랜덤 추첨</span>(2명)</div>
+                            <div class="benefit_box single">
+                                <div class="benefit_tit"><strong>구독 신청자 랜덤 추첨</strong>(2명)</div>
                                 <div class="benefit_item">
-                                    <div class="benefit_det">
-                                        <div class="benefit_img" id="playlist_bnf_img2"></div>
+                                    <div class="benefit_det no_border">
+                                        <div class="benefit_img_box">
+                                            <img src="./img/playlist_benefit_img2.png" class="mo_hide" alt="더 프리스타일 제품 이미지">
+                                            <img src="./img/mo_playlist_benefit_img2.png" class="mo_show" alt="더 프리스타일 제품 이미지">
+                                        </div>
                                         <div class="benefit_txt">더 프리스타일 제품<br>2대 제공<br>(1인 1대)</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="benefit_box">
-                                <div class="benefit_tit"><span class="txt_point">구독 신청자 랜덤 추첨</span>(50명)</div>
+                                <div class="benefit_tit"><strong>구독 신청자 랜덤 추첨</strong>(50명)</div>
                                 <div class="benefit_item">
                                     <div class="benefit_det">
-                                        <div class="benefit_img" id="playlist_bnf_img3"></div>
+                                        <div class="benefit_img_box">
+                                            <img src="./img/playlist_benefit_img3.png" class="mo_hide" alt="굽네치킨-랜선 우정 세트 이미지">
+                                            <img src="./img/mo_playlist_benefit_img3.png" class="mo_show" alt="굽네치킨-랜선 우정 세트 이미지">
+                                        </div>
                                         <div class="benefit_txt">굽네치킨-랜선 우정 세트<br>(볼케이노 + 바게트볼2개 + 콜라1.25L)<br>(30명)</div>
                                     </div>
                                     <div class="benefit_det">
-                                        <div class="benefit_img" id="playlist_bnf_img4"></div>
+                                        <div class="benefit_img_box">
+                                            <img src="./img/playlist_benefit_img4.png" class="mo_hide" alt="크로우캐년 컵과 그릇 세트 이미지">
+                                            <img src="./img/mo_playlist_benefit_img4.png" class="mo_show" alt="크로우캐년 컵과 그릇 세트 이미지">
+                                        </div>
                                         <div class="benefit_txt">크로우캐년 (2개 1세트)<br>D18 샐러드보울 블루마블 1개<br>D11 머그 블루마블 1개<br>(20명)</div>
                                     </div>
                                 </div>                          
@@ -310,8 +352,40 @@
                     </div>
                 </section>
             </div>
-        </div>
+        </main>
         <footer id="footer">
+            <div class="inner_1440">
+                <ul>
+                    <li>플레이어 및 응모 경품 당첨자 발표는 당첨자분들께 개별 연락 드릴 예정입니다. 당첨 발표 기간 내 연락이 닿지 않을 경우 당첨이 자동으로 취소됩니다.</li>
+                    <li>플레이어 및 응모 경품 당첨자 발표 일정 2022년 2월 14일 ~ 2월 15일 ※ 당첨자 개별 연락</li>
+                    <li>체험 제품은 미션 완료 후에 증정되며, 플레이어 활동 기간 동안 협의한 일정에 미션을 완료하지 못할 경우 체험 제품에 해당하는 금액을 배상해야 합니다. (삼성전자 홈페이지 내 제품 판매가 기준)</li>
+                    <li>타인의 보호되는 저작물, 초상권 일부 또는 전부를 해당 권리자 허락 없이 이용, 허락 범위를 넘어서는 행위에 대해서는 저작권, 초상권 침해가 되며 이에 대한 법적 책임은 이용자 본인에게 있고 당첨이 취소될 수 있습니다.</li>
+                    <li>굽네치킨 모바일 쿠폰은 발행일로부터 30일까지 사용 가능하며 일부 매장 사용 불가합니다. (사용기간 연장 불가)</li>
+                    <li>비정상적인 방법으로 플레이어 응모 시 이벤트 참여가 제한될 수 있습니다. (타인 명의·이미지 도용, 가짜 명의 생성, 반복참여 프로그램 이용 등)</li>
+                    <li>체험 제품 및 경품 색상은 선택 불가능하며, 이미지와 실제 경품이 다를 수 있습니다.</li>
+                    <li>제품 제세공과금은 자사 부담이며, 제품과 관련된 자세한 사항은 당첨자 개별 연락을 통해 안내해드릴 예정입니다.</li>
+                    <li>플레이어 선정 시, 개인정보 수집·이용 동의서, 활동 동의서, 제품 인수증, 신분증 등 제출이 필요하며 제출하지 않을 경우, 당첨이 취소될 수 있습니다.</li>
+                    <li>플레이어 응모 시 입력한 개인정보가 수령인과 반드시 일치하여야 하며, 불일치 시 당첨이 취소됩니다.</li>
+                    <li>활동 혜택은 중복 지급, 환불 및 현금 지급이 되지 않으며 타인에게 양도 및 판매를 금지합니다.</li>
+                    <li>플레이어 진행 일정과 내용 및 활동 혜택 등은 당사 사정에 의해 예고 없이 중단 또는 변경될 수 있으며, 발표일과 배송일정은 당사 사정에 의해 지연될 수 있습니다.</li>
+                    <li>콘텐츠 작성 시, 삼성전자에서 제품을 무상으로 지급받아 작성한 내용이라는 점을 반드시 기재해주시기 바랍니다.</li>
+                    <li>플레이리스트 구독 신청 경품 당첨자 발표는 당첨자 분들께 개별 연락 드릴 예정입니다. 당첨 발표 기간 내 연락이 닿지 않을 경우 당첨이 자동으로 취소됩니다.</li>
+                    <li>플레이리스트 구독 신청 경품 당첨자 발표 일정 : 2022년 3월 24일 ※ 당첨자 개별 연락</li>
+                    <li>굽네치킨 모바일 쿠폰은 발행일로부터 30일까지 사용 가능하며 일부 매장 사용 불가합니다. (사용기간 연장 불가)</li>
+                    <li>비정상적인 방법으로 플레이리스트 구독 신청 시 당첨자 선발에 제한될 수 있습니다. (타인 명의·이미지 도용, 가짜 명의 생성, 반복참여 프로그램 이용 등)</li>
+                    <li>경품 색상은 선택 불가능하며, 이미지와 실제 경품이 다를 수 있습니다.</li>
+                    <li>제품 제세공과금은 자사 부담이며, 제품과 관련된 자세한 사항은 당첨자 개별 연락을 통해 안내해드릴 예정입니다.</li>
+                    <li>구독 신청 시 입력한 개인정보가 수령인과 반드시 일치하여야 하며, 불일치 시 당첨이 취소됩니다.</li>
+                    <li>구독 신청 경품은 중복 지급, 환불 및 현금 지급이 되지 않으며 타인에게 양도 및 판매를 금지합니다.</li>
+                    <li>구독 신청 혜택 및 경품 이벤트와 관련한 내용은 당사 사정에 의해 예고 없이 중단 또는 변경될 수 있으며, 발표일과 배송일정은 당사 사정에 의해 지연될 수 있습니다.</li>
+                    <li>플레이어 및 응모 경품 당첨자와 플레이리스트 구독 신청 당첨자는 자사 내부 선발 기준에 따라 최종 선정됩니다.</li>
+                    <li>만 19세 미만 고객님의 경우 이벤트 참여가 제한됩니다.</li>
+                    <li>잘못된 개인정보 입력으로 인해 당첨자에게 연락이 불가능하거나 제품이 반송/분실될 경우 재발송 되지 않으며 당사에서 책임지지 않습니다.</li>
+                    <li>본 이벤트는 자사의 상황에 따라 예고 없이 중단 또는 변경될 수 있습니다.</li>
+                    <li>본 이벤트와 관련된 광고성 정보수신 동의는 이벤트 응모 시, 필수 조건임을 알려드립니다.</li>
+                    <li>운영사무국 : ㈜ 디앤에이디 070-4238-5239  zeous9538@dnadvt.co.kr (평일 10:00 ~ 18:00 운영 / 토, 일 및 공휴일 휴무 / 점심시간 12:30 ~ 14:00)</li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
